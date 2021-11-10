@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/aaaton/golem/v4"
+	"github.com/linga-io/golem/v4"
 )
 
 func TestSpanishUsage(t *testing.T) {

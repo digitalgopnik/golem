@@ -7,7 +7,7 @@ import (
 	"encoding/base64"
 	"io/ioutil"
 
-	"github.com/aaaton/golem/v4"
+	"github.com/linga-io/golem/v4"
 )
 
 const locale = "en"
