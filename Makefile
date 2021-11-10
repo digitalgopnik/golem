@@ -4,7 +4,7 @@ LANG=en
 all:
 	# go get -u github.com/jteeuwen/go-bindata/...
 	mkdir -p data
-	$(MAKE) en sv fr es de it
+	$(MAKE) en sv fr es de it ru
 
 package-all:
 	$(MAKE) LANG=en package
@@ -13,26 +13,31 @@ package-all:
 	$(MAKE) LANG=es package
 	$(MAKE) LANG=de package
 	$(MAKE) LANG=it package
-	
-en: 
+	$(MAKE) LANG=ru package
+
+en:
 	$(MAKE) LANG=en download package
-sv:  
+sv:
 	$(MAKE) LANG=sv download package
-fr:  
+fr:
 	$(MAKE) LANG=fr download package
-es:  
+es:
 	$(MAKE) LANG=es download package
-de:  
+de:
 	$(MAKE) LANG=de download package
-it:  
+it:
 	$(MAKE) LANG=it download package
+ru:
+	$(MAKE) LANG=ru download package
 
 download:
+	mkdir -p data
 	curl https://raw.githubusercontent.com/michmech/lemmatization-lists/master/lemmatization-$(LANG).txt > data/$(LANG)
 
 package:
 	# Packaging $(LANG)
 	go run cmd/simplify/simplify.go data/$(LANG) data/$(LANG).gz
+	mkdir -p v4/dicts/$(LANG)
 	go run cmd/genpack/genpack.go -locale $(LANG) -path data/$(LANG).gz > v4/dicts/$(LANG)/pack.go
 	# ----------------
 
