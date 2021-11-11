@@ -3,7 +3,7 @@ package it
 import (
 	"testing"
 
-	"github.com/linga-io/golem/v4"
+	"github.com/digitalgopnik/golem/v4"
 )
 
 func TestItalianUsage(t *testing.T) {

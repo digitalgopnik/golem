@@ -58,7 +58,7 @@ go get github.com/aaaton/golem/v4/dicts/it
 
 Russian
 ```
-go get github.com/linga-io/golem/v4/dicts/ru
+go get github.com/digitalgopnik/golem/v4/dicts/ru
 ``` 
 
 ### Basic usage
@@ -67,8 +67,8 @@ go get github.com/linga-io/golem/v4/dicts/ru
 package main
 
 import (
-	"github.com/linga-io/golem/v4"
-	"github.com/linga-io/golem/v4/dicts/en"
+	"github.com/digitalgopnik/golem/v4"
+	"github.com/digitalgopnik/golem/v4/dicts/en"
 )
 
 func main() {

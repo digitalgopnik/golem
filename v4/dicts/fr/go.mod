@@ -1,6 +1,6 @@
-module github.com/linga-io/golem/v4/dicts/fr
+module github.com/digitalgopnik/golem/v4/dicts/fr
 
 go 1.13
 
-require github.com/linga-io/golem/v4 v4.1.1
+require github.com/digitalgopnik/golem/v4 v4.1.1
 
