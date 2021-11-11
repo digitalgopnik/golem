@@ -7,7 +7,7 @@ import (
 	"github.com/linga-io/golem/v4"
 )
 
-func TestSpanishUsage(t *testing.T) {
+func TestGermanUsage(t *testing.T) {
 	l, err := golem.New(New())
 	if err != nil {
 		fmt.Println(err)

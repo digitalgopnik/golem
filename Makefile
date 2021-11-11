@@ -32,7 +32,7 @@ ru:
 
 download:
 	mkdir -p data
-	curl https://raw.githubusercontent.com/michmech/lemmatization-lists/master/lemmatization-$(LANG).txt > data/$(LANG)
+	curl https://raw.githubusercontent.com/digitalgopnik/lemmatization-lists/master/lemmatization-$(LANG).txt > data/$(LANG)
 
 package:
 	# Packaging $(LANG)

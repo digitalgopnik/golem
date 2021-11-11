@@ -5,7 +5,7 @@ This project is a dictionary based lemmatizer written in go.
 Since v4 all dictionaries need to be gotten individually.
 
 ```
-go get github.com/linga-io/golem/v4
+go get github.com/digitalgopnik/golem/v4
 ```
 
 
@@ -18,6 +18,7 @@ A [lemmatizer](https://en.wikipedia.org/wiki/Lemmatisation) is a tool that finds
 | English | aligning   | align   |
 | Swedish | sprungit   | springa |
 | French  | abattaient | abattre |
+| German  | kochende   | kochend |
 
 It's based on the dictionaries found on [michmech/lemmatization-lists](https://github.com/michmech/lemmatization-lists), which are available under the [Open Database License](https://opendatacommons.org/licenses/odbl/summary/). This project would not be feasible without them.
 
@@ -27,33 +28,38 @@ At the moment golem supports English, Swedish, French, Spanish, Italian & German
 
 English
 ```
-go get github.com/linga-io/golem/v4/dicts/en
+go get github.com/aaaton/golem/v4/dicts/en
 ```
 
 Swedish
 ```
-go get github.com/linga-io/golem/v4/dicts/sv
+go get github.com/aaaton/golem/v4/dicts/sv
 ```
 
 French
 ```
-go get github.com/linga-io/golem/v4/dicts/fr
+go get github.com/aaaton/golem/v4/dicts/fr
 ```
 
 German
 ```
-go get github.com/linga-io/golem/v4/dicts/de
+go get github.com/digitalgopnik/golem/v4/dicts/de
 ```
 
 Spanish
 ```
-go get github.com/linga-io/golem/v4/dicts/es
+go get github.com/aaaton/golem/v4/dicts/es
 ```
 
 Italian
 ```
-go get github.com/linga-io/golem/v4/dicts/it
+go get github.com/aaaton/golem/v4/dicts/it
 ```
+
+Russian
+```
+go get github.com/linga-io/golem/v4/dicts/ru
+``` 
 
 ### Basic usage
 

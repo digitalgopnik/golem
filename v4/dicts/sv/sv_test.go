@@ -7,7 +7,7 @@ import (
 	"github.com/linga-io/golem/v4"
 )
 
-func TestLemmatizer_Lemma(t *testing.T) {
+func TestSwedishUsage(t *testing.T) {
 	l, err := golem.New(New())
 	if err != nil {
 		t.Fatal(err)
